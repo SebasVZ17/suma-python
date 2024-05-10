@@ -1,12 +1,16 @@
 name: Prueba
 on:
   push:
-    branches:
-      - main
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: checklout repo
+      uses: action/
 
     steps:
     - name: Print a message
